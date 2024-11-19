@@ -50,8 +50,8 @@
                         <mainClass>com.mt.sample.Test</mainClass>
                     </manifest>
                   </archive>
-                    <!-- source>${jdk.version}</source -->
-                    <!-- target>${jdk.version}</target -->
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                 </configuration>
             </plugin>
             <!-- Add more plugins as needed -->
