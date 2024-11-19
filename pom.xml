@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>Test.app</groupId>
-    <artifactId>my-app-Test</artifactId>
+    <artifactId>my-test-app</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>My-Test-app</name>
+    <name>My-test-app</name>
     <url>http://www.example.com</url>
 
     <properties>
