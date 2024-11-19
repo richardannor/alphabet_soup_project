@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Test.app</groupId>
+    <groupId>com.mt</groupId>
     <artifactId>my-test-app</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -12,10 +12,18 @@
     <name>My-test-app</name>
     <url>http://www.example.com</url>
 
-    <properties>
-        <project.build.sourceEncoding>https://github.com/richardannor/alphabet_soup_project.git</project.build.sourceEncoding>
-        <maven.compiler.release>17</maven.compiler.release>
-    </properties>
+    <organization>
+             <name>Richard Osei-Annor>
+    </organization>
+
+    <description>Alphabet Soup Code</description>
+
+    <scm>
+        <connection>scm:git:https://github.com/richardannor/alphabet_soup_project.git</connection>
+        <developerConnection>scm:git:https://github.com/richardannor/alphabet_soup_project.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/richardannor/alphabet_soup_project.git</url>
+    </scm>
 
     <dependencies>
         <dependency>
@@ -30,15 +38,24 @@
     <build>
         <plugins>
             <plugin>
+                  <!-- Build an executable JAR -->
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
                 <configuration>
-                    <source>${jdk.version}</source>
-                    <target>${jdk.version}</target>
+                  <archive>
+                    <manifest>
+                      <addClassoatg>true</addClasspath>
+                        <classpathPrefix>lib</classpathPrefix>
+                        <mainClass>com.mt.sample.Test</mainClass>
+                    </manifest>
+                  </archive>
+                    <!-- source>${jdk.version}</source -->
+                    <!-- target>${jdk.version}</target -->
                 </configuration>
             </plugin>
             <!-- Add more plugins as needed -->
         </plugins>
     </build>
+         
 </project>
