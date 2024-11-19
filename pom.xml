@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mt</groupId>
+    <artifactId>my-test-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>My-test-app</name>
+    <url>http://www.example.com</url>
+
+    <organization>
+             <name>Richard Osei-Annor>
+    </organization>
+
+    <description>Alphabet Soup Code</description>
+
+    <scm>
+        <connection>scm:git:https://github.com/richardannor/alphabet_soup_project.git</connection>
+        <developerConnection>scm:git:https://github.com/richardannor/alphabet_soup_project.git</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/richardannor/alphabet_soup_project.git</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- Add more dependencies as needed -->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                  <!-- Build an executable JAR -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                  <archive>
+                    <manifest>
+                      <addClassoatg>true</addClasspath>
+                        <classpathPrefix>lib</classpathPrefix>
+                        <mainClass>com.mt.sample.Test</mainClass>
+                    </manifest>
+                  </archive>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                </configuration>
+            </plugin>
+            <!-- Add more plugins as needed -->
+        </plugins>
+    </build>
+         
+</project>
