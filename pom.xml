@@ -43,7 +43,7 @@
                         <configuration>
                             <executable>python</executable>
                             <arguments>
-                                <argument>${project.basedir}/src/Trail2.py</argument>
+                                <argument>${project.basedir}/src/Trail1.py</argument>
                             </arguments>
                         </configuration>
                     </execution>
